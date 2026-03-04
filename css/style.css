@@ -625,8 +625,8 @@ h6,
   position: relative;
   overflow: hidden;
   background:
-    linear-gradient(rgba(0, 20, 66, 0.7), rgba(0, 20, 66, 0.7)),
-    url(../img/breadcrumb.jpg);
+    /* linear-gradient(rgba(0, 20, 66, 0.7), rgba(0, 20, 66, 0.7)), */
+    url(../img/breadcrumb-1.jpg);
   background-position: center center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -1510,4 +1510,5 @@ h6 {
 
 .bg-med {
   background-color: #00e0ca40;
+
 }
