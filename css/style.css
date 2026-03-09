@@ -547,7 +547,7 @@ h6,
   }
 
   .carousel .carousel-inner .carousel-item img {
-    height: 450px;
+    height: 650px;
   }
 
   .carousel .carousel-inner .carousel-item .carousel-caption {
@@ -1537,4 +1537,5 @@ h6 {
 .bg-med {
   background-color: #00e0ca40;
 }
+
 
