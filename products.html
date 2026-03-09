@@ -37,148 +37,131 @@
     <link href="css/style.css" rel="stylesheet" />
     <!-- CSS -->
     <style>
-      .product-section {
-        padding: 80px 5%;
-      }
+         .product-section {
+         padding: 80px 5%;
+         }
+         .product-item {
+         display: flex;
+         gap: 40px;
+         align-items: flex-start;
+         margin-bottom: 60px;
+         flex-wrap: wrap;
+         }
+         .product-right {
+         flex: 1;
+         min-width: 300px;
+         }
+         .product-content h3 {
+         font-size: 25px;
+         margin-bottom: 10px;
+         }
+         .product-content p {
+         color: #555;
+         line-height: 1.6;
+         margin-bottom: 20px;
+         }
+         .product-left img {
+         /* width: 100%; */
+         border-radius: 16px;
+         margin-bottom: 20px;
+         box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+         }
+         .product-left {
+         flex: 1;
+         min-width: 250px;
+         }
+         .spec-box {
+         background: #fff;
+         padding: 25px 30px;
+         border-radius: 16px;
+         box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+         width: 100%;
+         }
+         .spec-box h4 {
+         margin-bottom: 15px;
+         }
+         .spec-box ul {
+         list-style: none;
+         padding: 0;
+         margin: 20px 0px;
+         }
+         .spec-box ul li {
+         padding: 8px 0;
+         border-bottom: 1px solid #eee;
+         color: #555;
+         }
+         .spec-box ul li:last-child {
+         border-bottom: none;
+         }
+         .product-item.reverse {
+         flex-direction: row-reverse;
+         }
+         .product-carousel img {
+         border-radius: 12px;
+         object-fit: cover;
+         }
+         .product-carousel {
+         max-width: 100%;
+         height: auto;
+         margin: auto;
+         }
+         /* .product-carousel .carousel-indicators {
+         bottom: -30px;
+         }
+         .product-carousel .carousel-indicators button {
+         width: 10px;
+         height: 10px;
+         border-radius: 50%;
+         background-color: #0b4fa3;
+         opacity: 0.4;
+         }
+         .product-carousel .carousel-indicators .active {
+         opacity: 1;
+         } */
+         .title-container{
+         text-align: center;
+         margin-top: 30px;
+         margin-bottom: 50px;
+         }
+         /* Responsive */
+         /* Mobile Fix */
+         @media (max-width: 768px) {
 
-      .product-item {
-        display: flex;
-        gap: 40px;
-        align-items: flex-start;
-        margin-bottom: 60px;
-        flex-wrap: wrap;
-      }
+         .product-item {
+            flex-direction: column;
+            margin-bottom: 10px;
+            gap: 5px;
+         }
 
-      .product-right {
-        flex: 1;
-        min-width: 300px;
-      }
+         .product-right {
+            margin-top: 20px;
+         }
 
-      .product-content h3 {
-        font-size: 24px;
-        margin-bottom: 10px;
-      }
+         .product-left {
+            text-align: center;
+         }
 
-      .product-content p {
-        color: #555;
-        line-height: 1.6;
-        margin-bottom: 20px;
-      }
+         .product-carousel .carousel-inner {
+            height: auto;
+         }
 
-      .product-left img {
-        /* width: 100%; */
-        border-radius: 16px;
-        margin-bottom: 20px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-      }
+         .product-carousel .carousel-item img {
+             width: 100%;
+            object-fit: contain !important;
+            display: block !important;
+            border-radius: 6px !important;
+            margin-bottom: 10px !important;
+         }
+         .carousel .carousel-inner .carousel-item {
+            height: 550px !important;
+         }
 
-      .product-left {
-        flex: 1;
-        min-width: 250px;
-      }
+         }
 
-      .spec-box {
-        background: #fff;
-        padding: 25px 30px;
-        border-radius: 16px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        width: 100%;
-      }
-
-      .spec-box h4 {
-        margin-bottom: 15px;
-      }
-
-      .spec-box ul {
-        list-style: none;
-        padding: 0;
-        margin: 20px 0px;
-      }
-
-      .spec-box ul li {
-        padding: 8px 0;
-        border-bottom: 1px solid #eee;
-        color: #555;
-      }
-
-      .spec-box ul li:last-child {
-        border-bottom: none;
-      }
-
-      .product-item.reverse {
-        flex-direction: row-reverse;
-      }
-
-      .product-carousel img {
-        border-radius: 12px;
-        object-fit: cover;
-      }
-
-      .product-carousel {
-        max-width: 100%;
-        margin: auto;
-      }
-
-      .product-carousel .carousel-indicators {
-        bottom: -30px;
-      }
-
-      .product-carousel .carousel-indicators button {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: #0b4fa3;
-        opacity: 0.4;
-      }
-
-      .product-carousel .carousel-indicators .active {
-        opacity: 1;
-      }
-
-      .title-container {
-        text-align: center;
-        margin-top: 60px;
-        margin-bottom: 150px;
-      }
-
-      .title-container p {
-        text-align: center;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      /* Responsive */
-      @media (max-width: 768px) {
-        .product-item {
-          flex-direction: column;
-        }
-
-        .product-right {
-          margin-top: 20px;
-        }
-
-        .product-carousel .carousel-inner {
-          aspect-ratio: 1 / 1;
-          /* square for mobile */
-          object-fit: contain;
-        }
-
-        .product-carousel .carousel-indicators {
-          bottom: -25px;
-        }
-
-        .product-left {
-          text-align: center;
-        }
-      }
-
-      .bg-breadcrumb {
-        background:
-          /* linear-gradient(rgba(0, 20, 66, 0.7), rgba(0, 20, 66, 0.7)), */
-          url(./img/breadcrumb-2.jpg);
-      }
-    </style>
+         .bg-breadcrumb {
+            background: linear-gradient(rgba(0, 20, 66, 0.7), rgba(0, 20, 66, 0.7)), url(./img/breadcrumb-2.jpg);
+         }
+      </style>
   </head>
 
   <body>
@@ -724,6 +707,7 @@
     <script src="js/main.js"></script>
   </body>
 </html>
+
 
 
 
